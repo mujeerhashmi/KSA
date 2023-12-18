@@ -1,26 +1,84 @@
 {
-    "KSA VAT 15%": {
-        "account_name": "VAT 15%",
-        "tax_rate": 15.00
-    },
-    "KSA VAT 5%": {
-        "account_name": "VAT 5%",
-        "tax_rate": 5.00
-    },
-    "KSA VAT Zero": {
-        "account_name": "VAT Zero",
-        "tax_rate": 0.00
-    },
-    "KSA VAT Exempted": {
-        "account_name": "VAT Exempted",
-        "tax_rate": 0.00
-    },
-    "KSA Excise 50%": {
-        "account_name": "Excise 50%",
-        "tax_rate": 50.00
-    },
-    "KSA Excise 100%": {
-        "account_name": "Excise 100%",
-        "tax_rate": 100.00
+    "chart_of_accounts": {
+        "*": {
+            "item_tax_templates": [
+                {
+                    "title": "KSA VAT 15%",
+                    "taxes": [
+                        {
+                            "tax_type": {
+                                "account_name": "Output VAT 15%",
+                                "tax_rate": 15.00
+                            }
+                        },
+                        {
+                            "tax_type": {
+                                "account_name": "Input VAT 15%",
+                                "tax_rate": 15.00,
+                                "root_type": "Asset"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "KSA VAT Zero",
+                    "taxes": [
+                        {
+                            "tax_type": {
+                                "account_name": "Output VAT Zero",
+                                "tax_rate": 0.00
+                            }
+                        },
+                        {
+                            "tax_type": {
+                                "account_name": "Input VAT Zero",
+                                "tax_rate": 0.00,
+                                "root_type": "Asset"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "KSA VAT Exempted",
+                    "taxes": [
+                        {
+                            "tax_type": {
+                                "account_name": "Output VAT Exempted",
+                                "tax_rate": 0.00
+                            }
+                        },
+                        {
+                            "tax_type": {
+                                "account_name": "Input VAT Exempted",
+                                "tax_rate": 0.00,
+                                "root_type": "Asset"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "KSA Excise 50%",
+                    "taxes": [
+                        {
+                            "tax_type": {
+                                "account_name": "Excise 50%",
+                                "tax_rate": 50.00
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "KSA Excise 100%",
+                    "taxes": [
+                        {
+                            "tax_type": {
+                                "account_name": "Excise 100%",
+                                "tax_rate": 100.00
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

@@ -169,9 +169,11 @@ def make_custom_fields():
 	create_custom_fields(custom_fields, ignore_validate=True, update=True)
 
 
-def create_company_settings(doc,method=None):
+def create_company_settings(doc, method=None):
 	update_regional_tax_settings(doc.country,doc.name)
 
 def update_regional_tax_settings(country, company):
-	if country == 'Saudi Arabia':
-		create_ksa_vat_setting(company)
+	if not frappe.flags.country_change or country != "Saudi Arabia":
+		return
+	
+	create_ksa_vat_setting(company)

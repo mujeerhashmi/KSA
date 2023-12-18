@@ -4,18 +4,18 @@
         "accounts": [
             {
                 "title": "Standard rated Sales",
-                "item_tax_template": "KSA VAT 5%",
-                "account": "VAT 5%"
+                "item_tax_template": "KSA VAT 15%",
+                "account": "Output VAT 15%"
             },
             {
                 "title": "Zero rated domestic sales",
                 "item_tax_template": "KSA VAT Zero",
-                "account": "VAT Zero"
+                "account": "Output VAT Zero"
             },
             {
                 "title": "Exempted sales",
                 "item_tax_template": "KSA VAT Exempted",
-                "account": "VAT Exempted"
+                "account": "Output VAT Exempted"
             }
         ]
     },
@@ -24,8 +24,8 @@
         "accounts": [
             {
                 "title": "Standard rated domestic purchases",
-                "item_tax_template": "KSA VAT 5%",
-                "account": "VAT 5%"
+                "item_tax_template": "KSA VAT 15%",
+                "account": "Input VAT 15%"
             },
             {
                 "title": "Imports subject to VAT paid at customs",
@@ -35,12 +35,12 @@
             {
                 "title": "Zero rated purchases",
                 "item_tax_template": "KSA VAT Zero",
-                "account": "VAT Zero"
+                "account": "Input VAT Zero"
             },
             {
                 "title": "Exempted purchases",
                 "item_tax_template": "KSA VAT Exempted",
-                "account": "VAT Exempted"
+                "account": "Input VAT Exempted"
             }
         ]
     }
