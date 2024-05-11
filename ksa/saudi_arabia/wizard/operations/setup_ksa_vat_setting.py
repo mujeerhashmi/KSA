@@ -8,7 +8,7 @@ def create_ksa_vat_setting(company):
 	company = frappe.get_doc("Company", company)
 
 	# Return if KSA VAT Settings already exist for the company
-	if frappe.db.exist("KSA VAT Setting", company.name):
+	if frappe.db.exists("KSA VAT Setting", company.name):
 		return
 	
 	file_path = os.path.join(os.path.dirname(__file__), "..", "data", "ksa_vat_settings.json")
